@@ -1,75 +1,88 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>卡片游戏</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<style type="text/css">
-			* {
-				margin: 0;
-				padding: 0;
-			}
-			
-			.container {
-				margin: 50px 0;
-				text-align: center;
-			}
-			#main {
-				background: #7CD3B1;
-				margin: 0 auto;padding: 50px;
-				text-align: center;
-				width: 800px;
-				height: 600px;
-				border: 1px solid green;
-			}
-			
-			#main>li {
-				margin: 30px;
-				display: inline-block;
-				width: 150px;
-				height:20%;
-				background: url(img/mouse.png) no-repeat bottom center;
-			}
-		</style>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/new_file.css">
+	<style>
 
-	<body>
-		<div class="container">
-			<h4>打地鼠</h4>
-			<div class="box1">
-				<ul id="main">
-					<li>
-						<div></div>
-					</li>
-					<li>
-						<div></div>
-					</li>
-					<li>
-						<div></div>
-					</li>
-					<li>
-						<div></div>
-					</li>
-					<li>
-						<div></div>
-					</li>
-					<li>
-						<div></div>
-					</li>
-					<li>
-						<div></div>
-					</li>
-					<li>
-						<div></div>
-					</li>
-					<li>
-						<div></div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<script>
-		</script>
-	</body>
+	</style>
+</head>
+
+<body>
+<div id="header">
+	<div id="header_left">
+		<table>
+			<tr>
+				<td>游戏时间</td>
+				<td><input type="number" id="inp0" value="" />&nbsp;分钟</td>
+			</tr>
+			<tr>
+				<td>倒计时间</td>
+				<td><span id="datetime"></span></td>
+			</tr>
+			<tr>
+				<td>地鼠出现间隔</td>
+				<td><input type="text" id="inp1" />&nbsp;秒钟</td>
+			</tr>
+			<tr>
+				<td>停留时间</td>
+				<td><input type="text" id="inp2" />&nbsp;秒钟</td>
+			</tr>
+			<tr>
+				<td>得分情况</td>
+				<td><span id="grade"></span> </td>
+			</tr>
+			<tr>
+				<td><input type="button" value="开始游戏" id="st" onClick="start_game()" /></td>
+				<td><input type="button" value="退出游戏" id="over" disabled="" /></td>
+			</tr>
+		</table>
+	</div>
+	<div id="header_rt">
+		<p>
+			游戏说明<br/>点击游戏开始按钮，在下图中随机产生老鼠,老鼠消失前单机老鼠进行打击， 打中一次即可获得10积分，失败一次不扣分，赶快行动吧！
+		</p>
+	</div>
+</div>
+<div id="main">
+	<div id="ma">
+		<table>
+			<tr>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+			</tr>
+			<tr>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+			</tr>
+			<tr>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+			</tr>
+			<tr>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+				<td><img src="img/mouse.png"></td>
+			</tr>
+
+		</table>
+	</div>
+</div>
+<div id="foot">
+</div>
+<script type="text/javascript" src="js/new_file.js"></script>
+</body>
 
 </html>
