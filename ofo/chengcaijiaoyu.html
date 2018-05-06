@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-5">
+
+	<head>
+		<meta charset="UTF-8" />
+		<!--<marquee scrolldelay="200" direction="right">
+			<font size=+1 color=#F5F5F5>欢迎来到我的网页</font>
+		</marquee>-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>北京成才教育科技股份有限公司</title>
+		<meta name="description" content="Creative CSS Loading Animations" />
+		<meta name="keywords" content="css-only, preloader, animations, css, css3, creative, custom, howto, tutorial" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="img/chengcai.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr.custom.63321.js"></script>
+		<!--[if lte IE 9]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+	</head>
+
+	<body style="cursor: pointer;">
+		<!--<hr /-->
+		<div class="container">
+			<header>
+				<h1 style="color: red; margin-top: 50px;"><strong>北京成才教育迎新文化技能大赛</strong></h1>
+				<h2 style="color: red; margin-top: 20px;">全栈开发</h2>
+				<div class="support-note">
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+
+			</header>
+
+			<section class="main">
+				<!-- the component -->
+				<div class="pre-loader"></div>
+			</section>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {
+			document.getElementsByTagName('body')[0].onclick = function() {
+				window.location.href = 'index.html';
+			};
+		}
+	</script>
+
+</html>

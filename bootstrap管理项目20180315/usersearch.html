@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<style type="text/css">
+			.user_search {
+				border: 1px solid gainsboro;
+				padding: 10px;
+				border-top: none;
+			}
+			
+			.btn-default.active {
+				background-color: #337ab7;
+				border-color: #337ab7;
+				color: white;
+			}
+			
+			.btn-default.active:hover {
+				background-color: #337ab7;
+				border-color: #337ab7;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<!--导航-->
+			<nav class="navbar navbar-default">
+
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="sr-only">Toggle navigtion</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					
+				</button>
+						<a href="index.html" class="navbar-brand" id="aah">Admin</a>
+					</div>
+
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+
+						<ul id="navv" class="nav navbar-nav">
+							<li>
+								<a href="index.html"><span class="glyphicon glyphicon-home"></span>后台首页</a>
+							</li>
+							<li class="active">
+								<a href="user.html"><span class="glyphicon glyphicon-user"></span>用户管理</a>
+							</li>
+							<li>
+								<a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>内容管理</a>
+							</li>
+							<li>
+								<a href="label.html"><span class="glyphicon glyphicon-tag"></span>标签管理</a>
+							</li>
+
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>前台首页</a>
+									</li>
+									<li>
+										<a href="index.html"><span class="glyphicon glyphicon-user"></span>个人主页</a>
+									</li>
+									<li>
+										<a href="index.html"><span class="glyphicon glyphicon-cog"></span>个人设置</a>
+									</li>
+									<li>
+										<a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>账户中心</a>
+									</li>
+									<li>
+										<a href="index.html"><span class="glyphicon glyphicon-heart"></span>我的收藏</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#apps" class=""><span class="glyphicon glyphicon-off"></span>退出</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="btn-group-vertical btn-block" role="group" aria-label="...">
+							<a href="user.html" class="btn btn-default" id="user_btn1">用户管理</a>
+							<a href="usersearch.html" class="btn btn-default active" id="user_btn2">用户搜索</a>
+							<a class="btn btn-default" data-toggle="modal" data-target="#myModel">添加用户</a>
+						</div>
+					</div>
+					<div class="col-lg-10">
+						<div>
+							<div class="header">
+								<h5>用户管理</h5>
+							</div>
+							<div>
+								<!--选项卡-->
+								<ul class="nav nav1 nav-tabs">
+									<li>
+										<!--bootstrap框架中data-toggle="tab"属性会取消a标签默认行为
+2015-05-14 22:35 by 流浪的诗人, 4902 阅读, 1 评论, 收藏, 编辑
+这几天做公司项目用了bootstrap框架,在用导航组件的过程中,我发现在a标签里面添加data-toggle="tab"属性之后,这个a标签会失去默认行为,点击a标签的时候不会跳转,即使有href属性,但是它不管用.So,如果想要实现它导航栏的效果,又要能够让链接有效,只能去掉data-toggle="tab"属性.但是动态切换导航按钮的active属性就实现不了,但是实现了跳转,active属性还有什么用呢?就算有也看不到bootstrap框架中data-toggle="tab"属性会取消a标签默认行为(小记)-->
+										<a href="user.html">用户管理</a>
+									</li>
+									<li class="active">
+										<a href="#">用户搜索</a>
+									</li>
+									<li>
+										<!--1 . 模态弹出窗声明，只需要自定义两个必要的属性：data-toggle和data-target.-->
+										<!--　除了通过data-toggle和data-target来控制模态弹出窗之外，Bootstrap框架针对模态弹出框还提供了其他自定义data-属性，来控制模态弹出窗。-->
+										<a href="#p3" data-toggle="modal" data-target="#myModel">添加用户</a>
+									</li>
+								</ul>
+								<!--面板-->
+								<div class="tab-content">
+									<form role="search" class="user_search">
+										<div class="alert alert-info" role="alert">技巧提示： 支持模糊搜索和匹配搜索，匹配搜索使用*代替！</div>
+										<div class="form-group">
+											<label for="name">用户名</label>
+											<input type="text" id="name" class="form-control" placeholder="请输入用户名">
+										</div>
+										<div class="form-group">
+											<label for="uid">
+												UID
+											</label>
+											<input type="password" id="uid" class="form-control" placeholder="请输入用户UID" />
+										</div>
+										<div class="form-group">
+											<label for="usergroup">选择用户组</label>
+											<select id="usergroup" class="form-control">
+												<option>限制会员</option>
+												<option>新手上路</option>
+												<option>注册会员</option>
+												<option>中级会员</option>
+												<option>高级会员</option>
+											</select>
+										</div>
+										<input type="submit" class="btn btn-default" value="提交" />
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--alert模块框-->
+			<!--一. 结构分析 
+
+　　Bootstrap框架中的模态弹出框，分别运用了“modal”、“modal-dialog”和“modal-content”样式，而弹出窗真正的内容都放置在“modal-content”中，其主要又包括三个部分：
+
+　　☑ 弹出框头部，一般使用“modal-header”表示，主要包括标题和关闭按钮
+
+　　☑ 弹出框主体，一般使用“modal-body”表示，弹出框的主要内容
+
+　　☑ 弹出框脚部，一般使用“modal-footer”表示，主要放置操作按钮
+-->
+			<div class="modal fade" id="myModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel">添加用户</h4>
+						</div>
+						<div class="modal-body">
+							<form action="#">
+								<div class="form-group">
+									<label for="addname">用户名</label>
+									<input type="text" id="addname" class="form-control" placeholder="用户名" />
+								</div>
+								<div class="form-group">
+									<label for="addpassword">用户密码</label>
+									<input type="text" id="addpassword" class="form-control" placeholder="请输入用户密码" />
+								</div>
+								<div class="form-group">
+									<label for="addpassword1">确认用户密码</label>
+									<input id="addpassword1" type="text" class="form-control" placeholder="请确认输入用户密码" />
+								</div>
+								<div class="form-group">
+									<label for="addemail">请输入用户邮箱</label>
+									<input type="email" id="addemail" class="form-control" placeholder="请输入用户邮箱" />
+								</div>
+								<div class="form-group">
+									<label for="addyonghuzu">所属用户组</label>
+									<select id="addyonghuzu" class="form-control">
+										<option>限制会员</option>
+										<option>新手上路</option>
+										<option>注册会员</option>
+										<option>中级会员</option>
+										<option>高级会员</option>
+									</select>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--页脚部-->
+			<footer>
+				<div class="container ">
+					<div class="row ">
+						<div class="col-lg-12 ">
+							<p>Copyright&nbsp;©&nbsp;2012-2015&nbsp;www.maiziedu.com&nbsp;蜀ICP备13014270号-4</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

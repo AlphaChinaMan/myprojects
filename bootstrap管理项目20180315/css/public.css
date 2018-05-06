@@ -1,0 +1,23 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+/*导航栏*/
+
+#navv span,.navbar-right span{
+	margin-right: 10px;
+	
+}
+
+.navbar-default .navbar-nav>.active>a {
+	background: #E7E7E7;
+	color: #333333;
+}
+/*页脚*/
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+	font-weight: 400;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul,
+			ol {
+				list-style: none;
+			}
+			
+			li {
+				border: 1px solid gray;
+				width: 100px;
+				height: 30px;
+			}
+			
+			#sd {
+				width: 100%;
+				height: 100px;
+			}
+			
+			.div1 {
+				width: 100px;
+				height: 100%;
+				float: left;
+				background: #008000;
+			}
+			
+			.div2 {
+				margin-left: 100px;
+				background: red;
+				height: 100%;
+			}
+			
+			#sd1 {
+				width: 100%;
+				height: 100px;
+				position: relative;
+			}
+			
+			.div11 {
+				position: absolute;
+				width: 100px;
+				height: 100%;
+				background: #008000;
+			}
+			
+			.div22 {
+				margin-left: 100px;
+				background: red;
+				height: 100%;
+			}
+			
+			#sd11 {
+				width: 100%;
+				height: 100px;
+				display: flex;
+			}
+			
+			.div111 {
+				width: 100px;
+				height: 100%;
+				background: #008000;
+			}
+			
+			.div222 {
+				flex-grow: 1;
+				background: red;
+				height: 100%;
+			}
+			
+			.div333 {
+				width: 100px;
+				background: gold;
+				height: 100%;
+			}
+			/*-----------------------------------*/
+			
+			#box {
+				height: 100px;
+				border: 1px solid #222;
+				display: flex;
+				/*设为伸缩容器*/
+			}
+			
+			.clas {
+				flex-grow: 1;
+				border: 1px solid #ccc;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="sd">
+			<div class="div1"></div>
+			<div class="div2"></div>
+		</div>
+		<div id="sd1">
+			<div class="div11"></div>
+			<div class="div22"></div>
+		</div>
+		<hr />
+		<div id="sd11">
+			<div class="div111"></div>
+			<div class="div222"></div>
+			<div class="div333"></div>
+		</div>
+		<hr />
+		<div>
+			<input class="ccc1" type="checkbox" data="3" /><input class="ccc2" type="checkbox" data="4" /><input class="ccc3" type="checkbox" data="5" />
+		</div>
+		<div id="box">
+			<div class="clas cl1">1</div>
+			<div class="clas cl2">2</div>
+			<div class="clas cl3">3</div>
+		</div>
+		<script>
+			var user = {
+				a: '19',
+				b: '18',
+				c: '16'
+			};
+			console.log(user);
+			if('a' in user) {
+				console.log(user.a);
+			}
+			console.log(user.a + user.b + user.c)
+			//JSON.stringify() 方法用于将 JavaScript 值转换为 JSON 字符串。
+			var user1 = JSON.stringify(user);
+
+			console.log(user1);
+			console.log(user1.a);
+			//JSON.parse() 方法用于将一个 JSON 字符串转换为对象。
+			var user2 = JSON.parse(user1);
+			console.log(user2);
+			var a = 20;
+
+			function aa() {
+				a += 10;
+			}
+			aa();
+			console.log(a);
+			//--------------------------------------------------------------------------
+			var dd = document.getElementsByClassName('clas');
+			var cc = document.getElementsByTagName('input');
+			//闭包写法
+			//			for(var i = 0; i < cc.length; i++) {
+			//				(function(i) {
+			//					cc[i].onclick = function() {
+			//						console.log(i);
+			//						if(cc[i].checked) {
+			//							dd[i].innerHTML = this.getAttribute('data');
+			//						}
+			//					}
+			//				})(i)
+			//			}
+			//--------------------------------------------------
+			//平常写法
+			for(var i = 0; i < cc.length; i++) {
+				cc[i].onclick = function() {
+					//					console.log(this);
+					//					console.log(this.getAttribute('data'));
+					switch(this.className) {
+						case 'ccc1':
+							console.log(this.getAttribute('data'));
+							document.getElementsByClassName('cl1')[0].innerHTML = this.getAttribute('data');
+							break;
+						case 'ccc2':
+							console.log(this.getAttribute('data'));
+							document.getElementsByClassName('cl2')[0].innerHTML = this.getAttribute('data');
+							break;
+						case 'ccc3':
+							console.log(this.getAttribute('data'));
+							document.getElementsByClassName('cl3')[0].innerHTML = this.getAttribute('data');
+							break;
+						default:
+							break;
+					}
+				}
+			}
+
+			/*
+			 * 调用函数
+			 * 参数分为：true和false;
+			 * 参数说明：传入true实现setInterval()功能；传入false取消setInterval()功能
+			 * */
+			countTimer(true);
+			//声明一个变量，用来获取函数，目的是为了能结束这个函数，也就是传入false时结束这个功能。
+			var fun;
+			//通过传入一个标记，来判断是否重复执行
+			function countTimer(flag) {
+				if(flag) {
+					fun = setTimeout(function() {
+						console.log("计数器=》", "ss")
+						//递归调用函数，不懂递归请百度
+						countTimer(true)
+					}, 2000);
+				} else {
+					//结束函数
+					clearTimeout(fun)
+				}
+			}
+		</script>
+
+		<body>
+
+</html>

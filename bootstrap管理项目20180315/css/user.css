@@ -1,0 +1,197 @@
+			body {
+				background: #272b30;
+				color: #C0C0C0;
+			}
+			/*导航*/
+			
+			.navbar-default .navbar-nav>.active>a {
+				color: #ffffff;
+				background-color: #272b2e
+			}
+			
+			.navbar-inverse {
+				background: #2e3338;
+				border: 1px solid rgba(0, 0, 0, 0.6);
+			}
+			
+			#navv a,
+			.navbar-right a {
+				border-right: 1px solid rgba(0, 0, 0, 0.2);
+				border-left: 1px solid rgba(255, 255, 255, 0.1);
+			}
+			
+			#navv a:hover {
+				color: white;
+				background: #272b2e;
+			}
+			
+			#navv~ul a:hover {
+				color: white;
+				background: #272b2e;
+			}
+			
+			#aah {
+				background: none;
+			}
+			
+			#aah:hover {
+				color: white;
+			}
+			
+			.dropdown-menu {
+				background: #2e3338;
+			}
+			
+			.dropdown-menu>li>a {
+				color: #C0C0C0;
+			}
+			/*左侧按钮*/
+			
+			.btn-group-vertical>a {
+				background: #32383E;
+				border-color: #141619;
+				color: #C0C0C0;
+			}
+			
+			.btn-group-vertical>a:hover {
+				background: #3E444C;
+				color: #C0C0C0;
+				border-color: #141619;
+			}
+			
+			.btn-group-vertical>.active {
+				background: #3E444C;
+				color: #C0C0C0;
+				border-color: #141619;
+			}
+			/*选项卡*/
+			
+			.header {
+				border-bottom: 1px solid #141619;
+			}
+			
+			.nav1>li.active>a:hover {
+				background: #3E444C;
+				color: white;
+				border: 1px solid #141619;
+			}
+			
+			.nav1>li.active>a:focus {
+				background: #3E444C;
+				color: white;
+				border: 1px solid #141619;
+			}
+			
+			.nav1>li.active>a {
+				background: #3E444C;
+				border: 1px solid #141619;
+				color: white;
+			}
+			
+			.nav1>li>a:hover {
+				background: #3E444C;
+				border: 1px solid #141619;
+				color: white;
+			}
+			
+			.nav1>li>a:focus {
+				background: #3E444C;
+				border: 1px solid #141619;
+				color: white;
+			}
+			
+			.nav-tabs {
+				border-bottom: 1px solid #141619;
+			}
+			/*表格*/
+			
+			.table {
+				background: #3E444C;
+			}
+			
+			.table thead>tr>th {
+				border-color: #141619;
+			}
+			
+			.table .btn {
+				background: linear-gradient(#484e55, #3a3f44 60%, #313539);
+				color: white;
+				border: 1px solid rgba(0, 0, 0, 0.8);
+				padding: 3px 10px;
+			}
+			
+			.table .btn:hover {
+				background: #000000;
+				color: white;
+			}
+			
+			.open>.dropdown-toggle: {
+				background: rgba(0, 0, 0, 0.6);
+				border: 1px solid #000000;
+				color: white;
+			}
+			
+			.open>.dropdown-toggle:focus {
+				background: rgba(0, 0, 0, 0.6);
+				color: white;
+			}
+			
+			.dropdown-menu>li>a:hover {
+				background: #141619;
+				color: #C0C0C0;
+				border-color: #3E444C;
+			}
+			
+			#fenye>ul>li>a {
+				border: 1px solid #000000;
+				background: #3E444C;
+				color: white;
+				display: inline-block;
+			}
+			
+			#fenye>ul>li>a:hover {
+				background: #000000;
+				color: white;
+			}
+			
+			#fenye>ul>.active>a {
+				color: #ffffff;
+				background-color: #232628;
+				border-color: rgba(0, 0, 0, 0.6);
+			}
+			/*模块框*/
+			
+			.modal .modal-content {
+				background: #2E3338;
+			}
+			
+			.modal-header {
+				border-bottom: 1px solid #080808;
+			}
+			
+			.modal-footer {
+				border-top: 1px solid #080808;
+			}
+			
+			.modal-footer>button:last-child {
+				border: 1px solid #8a9196;
+				background: linear-gradient(#8a9196, #7a8288 60%, #70787d);
+				color: white;
+			}
+			
+			.modal-footer>button:last-child:hover {
+				border: 1px solid #101010;
+				background: linear-gradient(#343344, #3a3f44 60%, #343344);
+			}
+			
+			.modal-footer>button:first-child {
+				border: 1px solid #101010;
+				background: linear-gradient(#343344, #3a3f44 60%, #343344);
+				color: white;
+			}
+			
+			.modal-footer>button:first-child:hover {
+				color: white;
+				background: #080808;
+				border: 1px solid #080808;
+			}

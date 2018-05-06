@@ -1,0 +1,1246 @@
+	/*---------------------index主页---------------------------------------------------------------------------------------------*/
+	/*banner图按钮*/
+	
+	.main .banner_contianer {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.img_list {
+		font-size: 0;
+		width: 400%;
+		height: 700px;
+	}
+	
+	.img_list a {
+		display: inline-block;
+		width: 25%;
+		height: 700px;
+		position: relative;
+	}
+	
+	.img_list a img {
+		width: 100%;
+		height: 700px;
+	}
+	
+	.banner_contianer .img_ab {
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		background: url(../img/indeximg/logo33.png) no-repeat;
+		left: 150px;
+		top: 130px;
+		background-size: 100%;
+		z-index: 2;
+	}
+	
+	.main .banner_contianer .btn_contianer .btn_nav {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	.main .banner_contianer .btn_contianer .btn_nav>li {
+		float: left;
+		width: 10px;
+		height: 10px;
+		background: #000;
+		border-radius: 50%;
+		margin: 10px;
+	}
+	
+	.main .banner_contianer .btn_contianer .btn_nav>li.btn_pitch {
+		background: #f7d408;
+	}
+	/*ofo风采展示及近期事件*/
+	
+	.link_containner {
+		width: 100%;
+	}
+	
+	.link_containner>ul {
+		width: 100%;
+		font-size: 0;
+		padding: 10px 0;
+	}
+	
+	.link_containner li {
+		width: 24.7%;
+		height: 210px;
+		display: inline-block;
+	}
+	
+	.link_containner li:nth-of-type(1) {
+		background: url(../img/indeximg/share_img.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.link_containner li:nth-of-type(2) {
+		margin-left: 0.4%;
+		background: url(../img/indeximg/event_img.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.link_containner li:nth-of-type(3) {
+		margin-left: 0.4%;
+		background: url(../img/indeximg/family_img.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.link_containner li:nth-of-type(4) {
+		margin-left: 0.4%;
+		background: url(../img/indeximg/active_img.jpg) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.link_containner li h3 {
+		margin: 30px 0 0 30px;
+		color: white;
+		font-size: 24px;
+		font-weight: 500;
+	}
+	
+	.link_containner li a {
+		margin: 90px 0 0 30px;
+		color: white;
+		font-size: 14px;
+		display: block;
+		width: 100px;
+		line-height: 30px;
+		height: 30px;
+		text-align: center;
+		border: 1px solid white;
+		border-radius: 20px;
+	}
+	
+	.link_containner li a em {
+		color: white;
+		width: 7px;
+		height: 11px;
+		display: inline-block;
+		background: url('data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAALCAYAAACzkJeoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NUEzMDQ0Q0JBOUQxMUU2OEU4RkRDRDhCNzEzNENBOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NUEzMDQ0REJBOUQxMUU2OEU4RkRDRDhCNzEzNENBOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY1QTMwNDRBQkE5RDExRTY4RThGRENEOEI3MTM0Q0E4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY1QTMwNDRCQkE5RDExRTY4RThGRENEOEI3MTM0Q0E4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Ubp9GgAAAF1JREFUeNpi+PfvnyYQ/4fSDMiYASrxH5sCJgYGBi0GBLgGxJpwHlSVJpoJFjBjcSpgQHPEYiTJxcgSnUgS94CYC6cEzE5kiQMwCZjkASQJVvRAAAnEoEuAMECAAQAeBO0Y/0RPZwAAAABJRU5ErkJggg==') left center no-repeat;
+	}
+	
+	.link_containner li a:hover {
+		background: white;
+		color: #000000;
+	}
+	
+	.link_containner li a:hover em {
+		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAALCAYAAACzkJeoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxNjU0NDkyMUJBOUUxMUU2OEY2MEU4QkZCOUMwOEMyNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxNjU0NDkyMkJBOUUxMUU2OEY2MEU4QkZCOUMwOEMyNyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE2NTQ0OTFGQkE5RTExRTY4RjYwRThCRkI5QzA4QzI3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjE2NTQ0OTIwQkE5RTExRTY4RjYwRThCRkI5QzA4QzI3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+aM5TEwAAAG5JREFUeNpiYGBgCALiM1AaBTAD8WIo2xaI3wDxdWTJN1AJDAXMUAa6gp9AfJEZKoCuwBykgBnJ/utQSVEon48RSXIaEJtB2Z+AOBtZ4gwU7wNiTWwSG5ElWIBYGsp+CsRZUBoOQJJVSIrgACDAAMYjGwTVvMtVAAAAAElFTkSuQmCC') left center no-repeat;
+	}
+	/*----------关于我们页-----------------------------------------*/
+	
+	.main_banner {
+		position: relative;
+		width: 100%;
+		height: 600px;
+	}
+	
+	.main_aboutus_banner {
+		background: url(../img/aboutus/banner.jpg) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.main_banner p {
+		font-size: 20px;
+		position: absolute;
+		bottom: 30px;
+		font-weight: bold;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	
+	.main_ofo_rule {
+		margin: 80px auto 40px auto;
+		font-family: PingFangSC-Semibold;
+		text-align: center;
+		width: 200px;
+		height: 40px;
+		line-height: 40px;
+		background: #FFDC00;
+		border-radius: 40px;
+	}
+	
+	.main_ofo_introduce {
+		margin: 70px 0 120px;
+		text-align: center;
+	}
+	
+	.main_ofo_introduce h3 {
+		color: #666;
+		margin: 45px 0 30px;
+		font-size: 40px;
+	}
+	
+	.main_ofo_introduce p {
+		color: #8d8d8d;
+		line-height: 35px;
+	}
+	/*--------------下载app页------------------------------------------------------------*/
+	
+	.main_download_banner {
+		background: url(../img/download/blur.jpg) top center no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.main_banner_container {
+		position: absolute;
+		width: 100%;
+		height: 700px;
+	}
+	
+	.main_banner_container .main_banner_container_phone {
+		position: absolute;
+		width: 400px;
+		height: 700px;
+		left: 49%;
+		top: 160px;
+		background: url(../img/download/phone.png) no-repeat;
+		background-size: 80% 80%;
+	}
+	
+	.main_banner_container .main_banner_container_appyard {
+		position: absolute;
+		width: 300px;
+		height: 440px;
+		left: 32%;
+		top: 180px;
+		background: url(../img/download/qrcode.png) no-repeat;
+		background-size: 70% 70%;
+	}
+	
+	.main_ofo_introduce {
+		margin: 70px 0 120px;
+		text-align: center;
+	}
+	
+	.main_usemethod li {
+		color: #333333;
+		width: 300px;
+		display: inline-block;
+	}
+	
+	.main_usemethod li:nth-of-type(1) {
+		padding-right: 150px;
+	}
+	
+	.main_usemethod li:nth-of-type(2) {
+		padding-right: 150px;
+	}
+	
+	.main_usemethod li h3 {
+		font-size: 20px;
+		margin: 20px 0;
+		font-weight: 500;
+	}
+	
+	.main_usemethod img {
+		display: block;
+	}
+	
+	.main_usemethod li p {
+		opacity: 0.6;
+		font-size: 14px;
+		line-height: 30px;
+	}
+	
+	.main_ofo_title {
+		font-weight: 500;
+		font-size: 30px;
+		padding: 70px 0 50px;
+	}
+	/*----------加入我们页-------------------------------------------------*/
+	
+	.main_joinus_banner {
+		background: url(../img/joinus/banner.jpg) no-repeat;
+		background-size: 100% 100%;
+		/*此元素会作为块级表格来显示*/
+		display: table;
+	}
+	
+	.main_joinus_banner>h3 {
+		line-height: 86px;
+		text-align: center;
+		font-size: 45px;
+		color: white;
+		/*此元素会作为一个单元格来显示：注释。。。父级必需添加：display: table;*/
+		display: table-cell;
+		vertical-align: middle;
+		/*实现文字淡入0.5s开始,用时2s完成*/
+		animation: fadein 2s 0.5s ease both;
+	}
+	
+	.main_branch_in {
+		animation: fadein 1s 0.4s ease both;
+		-webkit-animation: fadein 1s 0.4s ease both;
+	}
+	/*实现淡入的方法*/
+	
+	@-webkit-keyframes fadein {
+		from {
+			/*完全透明*/
+			opacity: 0;
+		}
+		to {
+			/*不透明*/
+			opacity: 1;
+		}
+	}
+	
+	.main_branch {
+		width: 100%;
+		padding: 50px 0;
+		text-align: center;
+	}
+	
+	.main_branch div p {
+		color: #929292;
+		padding-bottom: 50px;
+	}
+	
+	.main_branch li {
+		padding-right: 100px;
+		vertical-align: top;
+		display: inline-block;
+		width: 150px;
+	}
+	
+	.main_branch li:last-of-type {
+		padding-right: 0;
+		vertical-align: top;
+		display: inline-block;
+		width: 100px;
+	}
+	
+	.main_branch li h3 {
+		margin: 20px auto;
+		font-size: 24px;
+		color: #585858;
+	}
+	
+	.main_branch li a {
+		cursor: pointer;
+		line-height: 30px;
+		display: block;
+		color: #b8b8b8;
+		font-size: 14px;
+	}
+	
+	.main_branch li a:hover {
+		color: #585858;
+	}
+	
+	.main_branch div a {
+		border-radius: 70px;
+		margin: 50px 0;
+		display: inline-block;
+		border: 1px solid gainsboro;
+		line-height: 60px;
+		width: 160px;
+		height: 60px;
+		color: #333333;
+	}
+	
+	.main_branch div a:hover {
+		background: #ffd900;
+	}
+	
+	.main_work_containner {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		display: none;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	
+	.main_work_wrapper {
+		position: absolute;
+		width: 684px;
+		height: 500px;
+		top: 50%;
+		left: 50%;
+		color: white;
+		overflow: hidden;
+		margin-top: -250px;
+		margin-left: -342px;
+		background: #fff;
+	}
+	
+	.main_work_containner #close {
+		width: 16px;
+		height: 16px;
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		background: url(data:image/jpg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QMqaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjUtYzAxNCA3OS4xNTE0ODEsIDIwMTMvMDMvMTMtMTI6MDk6MTUgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjJFOUQ2NkJCOUQ3MTFFNkE1QTFBMEQ2MTQxODU1Q0UiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjJFOUQ2NkNCOUQ3MTFFNkE1QTFBMEQ2MTQxODU1Q0UiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMkU5RDY2OUI5RDcxMUU2QTVBMUEwRDYxNDE4NTVDRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyMkU5RDY2QUI5RDcxMUU2QTVBMUEwRDYxNDE4NTVDRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv/uAA5BZG9iZQBkwAAAAAH/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgMDAwMDAwMDAwMBAQEBAQEBAgEBAgICAQICAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA//AABEIABAAEAMBEQACEQEDEQH/xABUAAEBAQAAAAAAAAAAAAAAAAAAAQkBAQAAAAAAAAAAAAAAAAAAAAAQAAIDAQEBAQAAAAAAAAAAAAIDBAUGAQgSBxEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A3q3e79NeM/TNxs9pdT9ojZTWS5s6ax6sr+mZVT+CqNGUAsjUFpQoaK0pUH3Us6IgLIjOceDCbv017M9M0+zxd1PxaMbNXLhToTHtyv5nlWv6LY0lRiuNf2l8hRLclofdszhCYriL7xATdYb0x7N9NXOK2dPNxisXNOJPgTAc3L/mGVe/hpkoYBBHvbS/jqFqXKP7tj4JgS4i+dQDC4b0x4y9NU2KxlPN2atpNCJAgQwcrL/p+VQ/pukvYZHHorSgjtJrnNP7qT6RmTIjO9eH/9k=);
+		z-index: 20;
+	}
+	
+	.main_work_containner .work_r {
+		height: 380px;
+		padding: 10px 60px 20px;
+		overflow-y: scroll;
+		margin: 50px 25px;
+		display: none;
+		/*display: block;*/
+	}
+	
+	.main_work_containner .work_r h3 {
+		padding-bottom: 38px;
+		font-weight: 500;
+		font-size: 24px;
+		color: #333333;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	
+	.main_work_containner .work_r h4 {
+		margin: 40px 0 12px;
+		font-weight: 500;
+		font-size: 14px;
+		color: #141414;
+	}
+	
+	.main_work_containner .work_r p {
+		line-height: 24px;
+		font-size: 14px;
+		padding-bottom: 8px;
+		color: #999999;
+	}
+	/*设置滚动条*/
+	
+	.work_r::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 5px;
+	}
+	
+	.work_r::-webkit-scrollbar-track {
+		background: rgba(255, 255, 255, 0.3);
+		border-radius: 8px;
+	}
+	
+	.work_r::-webkit-scrollbar-track-piece {
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 8px;
+	}
+	
+	.work_r::-webkit-scrollbar-thumb {
+		background: rgba(0, 0, 0, 0.4);
+		border-radius: 8px;
+	}
+	
+	.work_r::-webkit-scrollbar-corner {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	
+	.work_r::-webkit-resizer {
+		background-repeat: no-repeat;
+		background-position: bottom right;
+	}
+	
+	.work_r::-webkit-scrollbar-thumb:hover {
+		background: #757575;
+	}
+	/*----------------ofo城市大共享----------------------------------------*/
+	
+	.share_main_banner {
+		background: url(../img/share/banner.jpg) left center no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.share_main_banner h3 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 60px;
+		margin: auto auto;
+		color: white;
+	}
+	
+	.share_main_introduce {
+		padding: 96px 0px 120px;
+	}
+	
+	.share_main_introduce .share_main_introduce_c {
+		margin: 0 auto;
+		width: 920px;
+		margin-top: 80px;
+		height: 460px;
+		background: white;
+	}
+	
+	.share_main_introduce_c h3 {
+		font-size: 36px;
+		font-weight: 500;
+		padding: 110px 0 22px;
+		color: rgb(88, 88, 88);
+	}
+	
+	.share_main_p {
+		text-align: center;
+		line-height: 30px;
+		font-size: 14px;
+		color: #4b4b4b;
+	}
+	
+	.share_main_img {
+		width: 460px;
+	}
+	
+	.share_main_img img {
+		width: 100%;
+	}
+	
+	.share_main_wen {
+		padding-left: 60px;
+		width: 340px;
+	}
+	
+	.share_main_wen .share_main_p {
+		text-align: left;
+		line-height: 22px;
+		padding-bottom: 10px;
+	}
+	/*-----------ofo大事件----------------------------------------------------------*/
+	
+	.staggerer_main_banner {
+		position: relative;
+		width: 100%;
+		height: 686px;
+		background: url(../img/staggerer/banner.jpg) top center no-repeat;
+		background-size: 100% 99%;
+	}
+	
+	.staggerer_main_banner h3 {
+		position: absolute;
+		top: 150px;
+		left: 150px;
+		font-size: 40px;
+		margin: auto auto;
+		color: white;
+	}
+	
+	.share_main_introduce {
+		padding: 96px 0px 120px;
+	}
+	
+	.staggere_main_list ul {
+		width: 1140px;
+		margin: 0 auto;
+		padding: 70px 0 60px;
+	}
+	
+	.staggere_main_list ul li {
+		background: #fff;
+		height: 400px;
+		margin-bottom: 40px;
+	}
+	
+	.staggere_main_list ul li a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.staggere_main_list ul li a:hover {
+		box-shadow: 5px 5px 5px darkgray;
+	}
+	
+	.new_img {
+		width: 570px;
+	}
+	
+	.new_event {
+		padding-top: 50px;
+		padding-left: 60px;
+		width: 450px;
+	}
+	
+	.new_event span {
+		color: #707070;
+		font-size: 12px;
+	}
+	
+	.new_event h3 {
+		color: #333333;
+		font-size: 30px;
+		padding: 20px 0 20px;
+		font-weight: 500;
+	}
+	
+	.new_event p {
+		color: #707070;
+		line-height: 20px;
+		font-size: 12px;
+	}
+	
+	.staggere_main_list .new_img img {
+		width: 100%;
+	}
+	/*----------------------------------------热门活动页-----------------------------------------*/
+	
+	.time {
+		font-size: 14px;
+	}
+	
+	.staggerer_main_banner {
+		background: url(../img/activity/banner.jpg) top center no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.staggerer_main_banner h3 {
+		position: absolute;
+		top: 150px;
+		left: 150px;
+		font-size: 40px;
+		margin: auto auto;
+		color: white;
+	}
+	
+	.post_list ul {
+		padding: 120px 0 200px;
+		overflow: hidden;
+		margin: 0 auto;
+		width: 830px;
+	}
+	
+	.post_list li {
+		margin-bottom: 25px;
+		color: #585858;
+		background: white;
+		width: 400px;
+		height: 610px;
+		float: left;
+	}
+	
+	.post_list li:hover {
+		box-shadow: 5px 5px 5px darkgray;
+	}
+	
+	.addleft {
+		margin-left: 25px;
+	}
+	
+	.text_area {
+		padding: 30px;
+	}
+	
+	.post_list li img {
+		width: 400px;
+		height: 280px;
+	}
+	
+	.post_list li h2 {
+		padding: 10px 0 10px;
+	}
+	
+	.post_list li p {
+		font-size: 14px;
+	}
+	/*---------ofo校园招聘-----------------------------------------------------------------------------*/
+	
+	.body_contianner {
+		width: 100%;
+		font-size: 16px;
+		background-color: #ffe749;
+	}
+	
+	.campusrecruitment_banner {
+		height: 497px;
+	}
+	
+	.campusrecruitment_banner img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.banxi {
+		width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.video_contianner {
+		padding: 80px 0;
+		position: relative;
+	}
+	
+	.video_box {
+		width: 838px;
+		height: 478px;
+		margin: 0 auto;
+	}
+	
+	.video_box #video {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.video_title {
+		position: absolute;
+		top: 100px;
+		left: 155px;
+		width: 180px;
+		height: 50px;
+		background: url(../img/campusrecruitment/video-title.png) center no-repeat;
+		background-size: 100% 100%;
+		z-index: 3;
+	}
+	
+	.video_contianner .point1 {
+		position: absolute;
+		width: 76px;
+		height: 22px;
+		top: 170px;
+		left: 130px;
+		z-index: -1;
+		background: url(../img/campusrecruitment/bg-point2.png) center no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.video_contianner .point2 {
+		position: absolute;
+		top: 460px;
+		right: 130px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point1.png) center no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.intro_containner {
+		position: relative;
+	}
+	
+	.intro_box {
+		text-align: justify;
+		margin: 0 auto;
+		text-indent: 2em;
+		width: 648px;
+		background: url(../img/campusrecruitment/intro.png) left center no-repeat;
+		background-size: 100% 100%;
+		padding: 110px 110px 100px 80px;
+		line-height: 1.8;
+	}
+	
+	.intro_point {
+		position: absolute;
+		left: 0;
+		top: 130px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point1.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.foot {
+		width: 100%;
+	}
+	
+	.foots_img {
+		width: 100%;
+		display: block;
+	}
+	
+	.history_contianner {
+		position: relative;
+		background: #FFFFFF;
+		display: block;
+		padding: 90px 0;
+		overflow: hidden;
+	}
+	
+	.history_box {
+		text-align: center;
+		padding: 100px;
+		background: #FFFFFF;
+	}
+	
+	.point1 {
+		position: absolute;
+		left: 0;
+		top: 590px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point4.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.point2 {
+		position: absolute;
+		right: 0;
+		top: 450px;
+		width: 76px;
+		height: 22px;
+		background: url(../img/campusrecruitment/bg-point3.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.point3 {
+		position: absolute;
+		left: -20px;
+		top: 1600px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point4.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.point4 {
+		position: absolute;
+		right: -20px;
+		top: 1120px;
+		width: 76px;
+		height: 22px;
+		background: url(../img/campusrecruitment/bg-point3.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.history_img {
+		width: 1000px;
+	}
+	
+	.history_title {
+		margin-bottom: 70px;
+	}
+	
+	.friends_contianner {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		height: 450px;
+		padding-bottom: 100px;
+	}
+	
+	.friends_contianner>div {
+		height: 450px;
+		position: absolute;
+		background: #FFFFFF;
+		width: 100%;
+		border-bottom-left-radius: 1000px 250px;
+		border-bottom-right-radius: 1000px 250px;
+	}
+	
+	.friends_box {
+		position: relative;
+		height: 450px;
+		/*border: 1px solid red;*/
+	}
+	
+	.friends_point {
+		position: absolute;
+		right: -20px;
+		top: 20px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point4.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.friends_box>img {
+		margin: 0 auto;
+	}
+	
+	.friends_contianner .friends_box .friends_pic {
+		width: 680px;
+		height: 420px;
+		padding: 0 50px;
+		left: 30px;
+		bottom: -80px;
+		position: absolute;
+	}
+	
+	.friends_pic .swiper-container {
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		height: 100%;
+		overflow: hidden;
+		z-index: 5;
+	}
+	
+	.friends_pic .swiper_contianner .swiper-wrapper {
+		position: relative;
+		box-sizing: content-box;
+		display: flex;
+		transition-property: transform;
+		height: 100%;
+	}
+	
+	.swiper-wrapper>img {
+		height: 100%;
+	}
+	
+	.swiper-button-prev {
+		cursor: pointer;
+		position: absolute;
+		top: 190px;
+		left: 10px;
+		width: 27px;
+		height: 44px;
+		background: url(../img/campusrecruitment/friends-arr-l.png) no-repeat;
+	}
+	
+	.swiper-button-next {
+		cursor: pointer;
+		position: absolute;
+		left: 745px;
+		top: 190px;
+		width: 27px;
+		height: 44px;
+		background: url(../img/campusrecruitment/friends-arr-r.png) no-repeat;
+	}
+	
+	.imgs {
+		display: block;
+		border: none;
+		margin: 0 auto 60px;
+	}
+	
+	.friends_ques {
+		position: absolute;
+		left: 840px;
+		top: 210px;
+		width: 280px;
+		height: 190px;
+		background: url(../img/campusrecruitment/friends-ques.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.person_contianner {
+		padding: 120px 0 100px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.person_box {
+		position: relative;
+	}
+	
+	.person_pic {
+		width: 1100px;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	.person_point1 {
+		position: absolute;
+		left: -20px;
+		top: 20px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point1.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.person_point2 {
+		position: absolute;
+		right: -20px;
+		top: 410px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point1.png) no-repeat;
+		background-size: 100% 100%;
+		z-index: -1;
+	}
+	
+	.person_point3 {
+		position: absolute;
+		left: -20px;
+		top: 770px;
+		width: 76px;
+		height: 22px;
+		background: url(../img/campusrecruitment/bg-point2.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.person_point4 {
+		position: absolute;
+		right: -20px;
+		top: 1355px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point1.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.post_containner {
+		padding: 80px 0;
+		background: #FFFFFF;
+	}
+	
+	.post_box {
+		position: relative;
+	}
+	
+	.post_box .point4_1 {
+		position: absolute;
+		left: -20px;
+		top: 670px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point4.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.post_box .point4_2 {
+		position: absolute;
+		right: -20px;
+		top: 210px;
+		width: 100px;
+		height: 50px;
+		background: url(../img/campusrecruitment/bg-point4.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.post_mian {
+		width: 820px;
+		margin: 0 auto;
+	}
+	
+	.post_mian .post_lists li {
+		position: relative;
+		height: 50px;
+		line-height: 50px;
+		padding: 0 100px 0 86px;
+		color: #3d3b3b;
+	}
+	
+	.post_mian .post_nav {
+		color: white;
+		overflow: hidden;
+		background: #3d3b3b;
+		border-radius: 20px 20px 0 0;
+	}
+	
+	.post_mian .post_nav li {
+		float: left;
+		width: 25%;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+	
+	.post_mian .post_nav li:hover {
+		background: #ffe749;
+		color: #3d3b3b;
+		font-weight: bold;
+	}
+	
+	.post_mian .post_nav li.active {
+		color: #3d3b3b;
+		background-color: #ffe749;
+		font-weight: bold;
+	}
+	
+	.post_mian .post_lists {
+		padding: 20px 0;
+		background: #ffe749;
+		border-radius: 0 0 20px 20px;
+	}
+	
+	.ul_none {
+		display: none;
+	}
+	
+	.ul_block {
+		display: block;
+	}
+	
+	.post_mian .post_lists li span {
+		position: absolute;
+		top: 7px;
+		right: 86px;
+		width: 80px;
+		height: 34px;
+		line-height: 30px;
+		height: 30px;
+		border: 1px solid #000000;
+		border-radius: 20px;
+		text-align: center;
+		cursor: pointer;
+	}
+	
+	.school_contianner {
+		background: #FFFFFF;
+		position: relative;
+		padding-bottom: 80px;
+	}
+	
+	.school_time {
+		width: 880px;
+		margin: 0 auto;
+	}
+	
+	.school_point4 {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 76px;
+		height: 22px;
+		background: url(../img/campusrecruitment/bg-point3.png) left center no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.preach_contianner {
+		position: relative;
+		width: 100%;
+		height: 760px;
+		overflow: hidden;
+		padding-bottom: 120px;
+	}
+	
+	.preach_contianner>div {
+		width: 100%;
+		/*left: -15%;*/
+		height: 760px;
+		background: #FFFFFF;
+		position: absolute;
+		border-bottom-left-radius: 1200px 250px;
+		border-bottom-right-radius: 1200px 250px;
+	}
+	
+	.preach_box {
+		position: relative;
+	}
+	
+	.preach_point4 {
+		position: absolute;
+		right: -20px;
+		top: 420px;
+		width: 76px;
+		height: 22px;
+		background: url(../img/campusrecruitment/bg-point3.png) left center no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.preach_table {
+		width: 900px;
+		margin: 0 auto;
+	}
+	
+	.preach_btn img {
+		margin-top: 140px;
+		width: 250px;
+	}
+	
+	.preach_ewm img {
+		top: 610px;
+		right: 10px;
+		position: absolute;
+		width: 170px;
+		height: 170px;
+	}
+	/*-----------右侧固定导航栏----------------------------------------------------*/
+	
+	.nav {
+		position: fixed;
+		top: 100px;
+		right: 0;
+		z-index: 7px;
+		letter-spacing: 1px;
+		overflow: hidden;
+	}
+	
+	.nav_title {
+		position: relative;
+		cursor: pointer;
+		font-size: 18px;
+		color: #FFFFFF;
+		padding-left: 50px;
+		letter-spacing: 2px;
+		background: #3d3b3b;
+		border-radius: 20px 0 0 20px;
+		width: 90px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 10px;
+	}
+	
+	.nav_title>img {
+		width: 36px;
+		position: absolute;
+		top: 2px;
+		left: 2px;
+	}
+	
+	.nav li {
+		padding-left: 50px;
+		line-height: 30px;
+		height: 30px;
+		cursor: pointer;
+	}
+	
+	.nav li:hover {
+		font-weight: bold;
+	}
+	/*--------------------ofo合作伙伴行为准则页----------------------------------------------------------------------*/
+	
+	.pact_wrapper {
+		width: 100%;
+		height: 100%;
+		background: #FFEB00;
+	}
+	
+	.colors1 {
+		background: white;
+	}
+	
+	.colors2 {
+		background: #191919;
+	}
+	
+	.main_pact_contanner {
+		padding: 180px 0 150px;
+	}
+	
+	.div_title {
+		margin: 0 auto 50px;
+		background: #ffdc00;
+		border-radius: 20px;
+		text-align: center;
+		line-height: 30px;
+		width: 200px;
+		height: 30px;
+	}
+	
+	.main_pact {
+		margin: 0 auto;
+		width: 80%;
+		height: auto;
+		padding: 110px 0 150px;
+		border-radius: 50px;
+	}
+	
+	.main_pact>div {
+		padding: 0 120px 70px;
+	}
+	
+	.main_pact h5 {
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 30px;
+	}
+	
+	.main_pact p {
+		font-size: 12px;
+		line-height: 15px;
+		color: #666;
+	}
+	
+	.main_pact_title {
+		font-size: 40px;
+		letter-spacing: 0;
+		text-align: center;
+		padding-bottom: 90px;
+	}
