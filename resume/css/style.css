@@ -607,6 +607,9 @@
 		overflow: hidden;
 		position: relative;
 	}
+	.portfolio-item .hover-bg a{
+		height: 100%;
+	}
 	.portfolio-item .hover-bg a>img{
 		height: 100%;
 	}
