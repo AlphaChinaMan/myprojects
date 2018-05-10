@@ -607,7 +607,7 @@
 		overflow: hidden;
 		position: relative;
 	}
-	.portfolio-item .hover-bg>img{
+	.portfolio-item .hover-bg a>img{
 		height: 100%;
 	}
 	.hover-bg .hover-text {
@@ -635,6 +635,7 @@
 		-webkit-backface-visibility: hidden;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
+		color: #F4D03F;
 	}
 	
 	.hover-bg .hover-text>i {
